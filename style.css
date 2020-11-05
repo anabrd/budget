@@ -1,11 +1,11 @@
 body {
     box-sizing: border-box;
     background-color: #dfd8d3;
-    font-family: 'Noto Sans',
-        sans-serif;
-    color: #226357;
-    position: relative;
-    overflow: hidden;
+font-family: 'Noto Sans',
+sans-serif;
+color: #226357;
+position: relative;
+padding-bottom: 5%;
 }
 
 svg {
@@ -28,7 +28,7 @@ svg {
 
 h1 {
     font-family: 'Lato',
-        sans-serif;
+    sans-serif;
     font-size: 2rem;
     padding: 2% 0;
     margin-bottom: 10%;
@@ -48,9 +48,9 @@ h1 {
 .image {
     background-image: url("https://images.unsplash.com/photo-1579621970795-87facc2f976d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
     width: 30vw;
-    background-position: center;
-    background-size: cover;
-    border-top-left-radius: 20px;
+        background-position: center;
+        background-size: cover;
+        border-top-left-radius: 20px;
 }
 
 .form-table {
@@ -62,16 +62,15 @@ h1 {
 
 .label-b {
     display: block;
-    margin: 3% auto;
+    margin: 1% auto;
     font-weight: 700;
 }
 
-#friends,
-#family {
+#friend, #family {
     margin-left: 20px;
 }
 
-button {
+input[type=submit] {
     display: block;
     background-color: #e1c5c1;
     border: none;
@@ -87,45 +86,71 @@ button {
     transition: 0.3s;
 }
 
-button:hover {
+input[type=submit]:hover {
     background-color: #226357;
     color: white;
     opacity: 1;
 }
 
 
-input,
-select,
-textarea {
-    padding: 8px 13px 8px 7px;
+input, select, textarea {
+    padding: 3px 10px 8px 7px;
     font-size: 1rem;
     background-clip: padding-box;
     color: #226357;
     border: 1px solid #b5855a;
     border-radius: .25rem;
     transition: border-color .15s ease-in-out,
-        box-shadow .15s ease-in-out;
+    box-shadow .15s ease-in-out;
     font-family: 'Noto Sans';
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 #budget {
-    width: 80%;
-    margin: 20px auto;
+    width: 60vw;
+    margin: 5% auto auto auto;
+    border-collapse: collapse;
+    text-align: center;
+    -webkit-box-shadow: -2px 2px 55px -19px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -2px 2px 55px -19px rgba(0, 0, 0, 0.75);
+    box-shadow: -2px 2px 55px -19px rgba(158, 158, 158, 0.75);
 }
 
 #budget th {
     background-color: #b5855a;
     color: white;
-    padding: 5px 12px;
+    height: 5vh;
 }
 
-#budget>thead>tr>th:first-child {
+tfoot tr td {
+    background-color: #226357;
+    height: 2vh;
+    color: white;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+#budget td {
+    height: 3vh;
+    width: 4vh;
+}
+
+#budget > thead > tr > th:first-child{
     border-top-left-radius: 12px;
+
 }
 
 #budget>thead>tr>th:last-child {
     border-top-right-radius: 12px;
+}
+
+#budget>tbody>tr:nth-child(odd) {
+    background-color: white;
+}
+
+
+#budget>tbody>tr:nth-child(even) {
+    background-color: #e1c5c1;
 }
 
 @media only screen and (max-width: 800px) {

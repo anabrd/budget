@@ -1,6 +1,6 @@
 # Budget App 💸
 
-[!Github Pages](https://anabrd.github.io/budget/)
+[Github Pages](https://anabrd.github.io/budget/)
 
 Practice:
 

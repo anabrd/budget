@@ -11,7 +11,7 @@ padding-bottom: 5%;
 svg {
     position: absolute;
     z-index: -10;
-    width: 20vw;
+    width: 30vw;
 
 }
 
@@ -39,7 +39,7 @@ h1 {
     justify-content: center;
     overflow: hidden;
     width: 60vw;
-    height: 80vh;
+    height: 85%;
     margin: auto;
     padding-top: 3%;
     border-radius: 20px;
@@ -51,6 +51,8 @@ h1 {
         background-position: center;
         background-size: cover;
         border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        
 }
 
 .form-table {
@@ -131,7 +133,7 @@ tfoot tr td {
 }
 
 #budget td {
-    height: 3vh;
+    height: 3.5vh;
     width: 4vh;
 }
 
